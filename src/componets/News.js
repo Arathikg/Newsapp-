@@ -156,7 +156,7 @@ this.setState({articles:parsedData.articles,totalResults:parsedData.totalResults
           <h2>NEWS TODAY</h2>
           <h4>
             <Spinner/>
-           <marquee> TOP HOT HEADLINES ------TWISHA HIDES RASGULLA UNDER HER CHEEKS </marquee> 
+           
           </h4>
           <div className="row">
             {this.state.articles.map((element) => {
@@ -187,22 +187,3 @@ this.setState({articles:parsedData.articles,totalResults:parsedData.totalResults
 
 export default News;
 
-/* so bootstrap mai col md 3 means 12 ki grid hothi hai ussmai teen grid allot to tht one div so aise cteen har ak ko in 
-medium size screen 
-this.setstate is used to set the state like settext jaise
-you can update them independently with separate setState() calls:
-
-constructor(props) {
-    super(props);
-    this.state = {
-      posts: [],
-      comments: []
-    };
-  }
-for making state aise samj this is the syntax as of now
-so yaha constructor ke andar state set kar diya hai basically
-pahiley render run hoga fr hi compound did mount run hotha hai
-incorporate the dark mmode wala part also in this 
-
-
-*/
